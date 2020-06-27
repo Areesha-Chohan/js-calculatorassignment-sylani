@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="container">
+            <h1 style="color: white;">JAVASCRIPT CALCULATOR</h1>
+            <h2 style="color: white;">MADE BY : AREESHA CHOHAN</h2>
+            <div class="calculator">
+            <input type="text" class="result" id="result" onfocus="this.style.backgroundColor='white'" onblur="this.style.backgroundColor='grey'">
+            <table>
+                
+                <tr>
+                    <td>
+                        <button class="clearBtn"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="clearResult()">C</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('(')">(</button></td>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber(')')" >)</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('%')" >%</button></td>
+                    <td><button  class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('*')">*</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('7')" >7</button></td>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('8')" >8</button></td>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('9')">9</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('/')">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('4')">4</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('5')">5</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('6')">6</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('1')">1</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('2')">2</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('3')">3</button></td>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('0')">0</button></td>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('00')">00</button></td>
+                    <td><button class="button" onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getNumber('_')" >.</button></td>
+                    <td><button class="button"  onblur="this.style.backgroundColor='pink'" onmouseover="this.style.backgroundColor='grey';" onclick="getResult()">=</button></td>
+                </tr>
+                <!-- <tr>
+                    <td><button class="clrbtn">CLEAR</button></td>
+                    
+                </tr> -->
+            </table>
+        </div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
